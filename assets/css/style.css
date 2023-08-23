@@ -1,0 +1,197 @@
+/* Start Variable */
+:root {
+    --main-color:#10cab7;
+}
+/* End Variable */
+/* Start Global Rules  */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Small */
+@media (min-width:768px) {
+    .container{
+        width:750px
+    }   
+}
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width:970px
+    }  
+}
+/* larg */
+@media (min-width:1200px) {
+    .container {
+        width:1170px
+    }  
+}
+/* End Global Rules */
+
+ /* Start Header */
+.feature .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo {
+    width: 60px;
+}
+.container .links {
+    position: relative;
+}
+.container .links ul::before {
+    content: ""; 
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #115fa7 transparent;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+.container .links:hover .bar-tool {
+    display: block;
+}
+.links .bar-tool {
+    list-style: none;
+    background-color: #115fa7;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    top : calc(100% + 15px);
+    display: none;
+    z-index: 2;
+}
+.container .links .bar-tool a {
+    text-decoration: none;
+    color: #EEE0C9;
+    display: block;
+    padding: 15px;
+    transition: 0.3s;
+}
+.container .links .bar-tool a:hover {
+    padding-left: 25px;
+}
+.container .links.bar-tool li:not(:last-child) a {
+    border-bottom:1px solid #EEE0C9;
+}
+/* Start Hero */
+.hero {
+    background-image:url("../img/learning.jpg") ;
+    background-size: cover;
+    height: calc(100vh - 56.11px);
+    position: relative;
+}
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+}
+/* End Hero */
+ /* End Header */
+ /* Start About  */
+#About {
+    margin: 0 auto;
+}
+.container .intro-text {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+ /* End About  */
+/* Start Services */
+.feature {
+    background-color: #e3afaf;
+}
+h1 {
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: center;
+}
+.feature .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.feature .feat {
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #939ba6;
+    text-align: center;
+}
+
+.container .feat i{
+    text-align: center;
+    color: #e3afaf;
+}
+.container .feat p,ul{
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+    text-align: start
+}
+ /* End Services */
+ /* Start Specializations */
+h2 {
+    color: #ebeced;
+    font-weight: bolder;
+    letter-spacing: -1px;
+}
+ /* End Specializations */ 
+ /* Start Teacher */
+.caption {
+    width: 80px;
+}
+ /* End Teacher */
+ /* Start plans */
+.detail {
+    background-color: #7c8ba1;
+    border: 1px solid #EEE0C9;
+    border-radius: 2px;
+}
+ /* End plans */
+ /* Start Contact Us */
+#Contact form{
+    width: 200px;
+    margin: 0px auto;
+    padding:0px;
+    background-color: #e3afaf;
+    }
+    input , textarea{
+        width: 200px;
+    }
+.click {
+    background-color: #777;
+    margin: 10px auto;
+}
+#info .feat {
+    width: 250px;
+    margin: 0px auto;
+    padding:0px;
+    background-color: #e3afaf;
+    /* margin-top: 0px; */
+} 
+ /* End Contact Us */
+    /* Start Footer */
+.end-foot {
+    background-color: #939ba6;
+}
+.end-foot ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.end-foot ul a {
+    text-decoration: none;
+    color: #777;
+}
+/* End Footer */
